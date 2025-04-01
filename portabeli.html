@@ -8,42 +8,86 @@
 </head>
 <body>
     <header class="header">
-        <img src="assets/img/fondo.jpg" alt="Fondo" class="header-image">
+        <img src="assets/img/fondo.webp" alt="Fondo" class="header__image">
         <nav class="nav">
             <ul class="nav__list">
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#projects">Trabajos</a></li>
-                <li><a href="#contact">Contactos</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Acerca de</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Trabajos</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contactos</a></li>
             </ul>
         </nav>
-        <div class="header__content">
+        <section class="header__content">
             <h1 class="header__title">Belinda Salas Angeles</h1>
             <p class="header__subtitle">Desarrolladora de Software</p>
-        </div>
+        </section>
     </header>
     
-    <section id="about" class="about">
-        <img class="about__image" src="assets/img/foto.jpg" alt="Foto de perfil">
-        <h2 class="about__title">Acerca de mí...</h2>
-        <p class="about__text">Técnico Superior Universitario en Tecnologías de la Información Área Desarrollo de Software Multiplataforma...</p>
-    </section>
-    
-    <section id="projects" class="projects">
-        <h2 class="projects__title">PROYECTOS</h2>
-        <div class="projects__container">
-            <div class="projects__item">
-                <img src="assets/img/project1.webp" alt="Proyecto 1">
-                <p>Descripción del proyecto 1</p>
-            </div>
-            <div class="projects__item">
-                <img src="assets/img/project2.webp" alt="Proyecto 2">
-                <p>Descripción del proyecto 2</p>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section id="about" class="about">
+            <img class="about__image" src="assets/img/foto.webp" alt="Foto de perfil">
+            <h2 class="about__title">Acerca de mí...</h2>
+            <p class="about__text">Título: Técnico Superior Universitario en Tecnologias de la Informacion Area Desarrollo de Software Multiplataforma.
+                Mi nombre es Belinda Salas Angeles, actualmente estudiante de Ingeniería en Desarrollo y Gestión de Software en la
+                 Universidad Tecnológica de la Sierra Hidalguense. Mi pasión por la programación comenzó cuando cursé un curso de 
+                informatica, donde aprendi muchas cosas interesantes del desarrollo de software, tengo un titulo en Técnico Superior
+                 Universitario en la misma institución, donde adquirí los primeros conocimientos sobre desarrollo web, bases de datos 
+                y gestión de proyectos. Actualmente, me enfoco en mejorar mis habilidades en tecnologías como JavaScript, HTML, CSS,
+                 y frameworks modernos como React y Node.js. 
+                Busco siempre innovar y crear soluciones eficientes que impacten positivamente en los usuarios y las empresas.</p>
+        </section>
+        
+        <section id="projects" class="projects">
+            <h2 class="projects__title">PROYECTOS</h2>
+            <article class="projects__container">
+                <figure class="projects__item">
+                    <img src="assets/img/kerrnandez.webp" alt="Proyecto 1" class="projects__image">
+                    <figcaption class="projects__description">Formulario de registro para
+                        sala K-ERRNANDEZ
+                        Este formulario fue elaborado en 3 
+                        cuatrimeste donde realizamos un formulario
+                        de registros para la sala, para un mejor control
+                        mas facil y tambien reducir el uso de papel.
+                        Tecnologías utilizadas: HTML, CSS,
+                        Firebase, bootstrap 5</figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="assets/img/empresa.webp" alt="Proyecto 2" class="projects__image">
+                    <figcaption class="projects__description">SISTEMA PARA CONTROLAR LA LOGÍSTICA
+                        DE PEDIDOS DE IMPORTACIÓN DE VEHÍCULOS
+                        Y REFACCIONES.
+                        Se desarrollo un sistema que solicitaba el cliente por 
+                        parte de BusinessPro, contribui en este proyecto con
+                        la empresa COAL SOLUTION donde realize mis estadia 
+                        de tecnico superior
+                        Tecnologías utilizadas: Angular, Mongo DB,
+                        Python, React.
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="assets/img/cell.webp" alt="Proyecto 2" class="projects__image">
+                    <figcaption class="projects__description">Hospedaje Hoteler de Hidalgo
+                        Este proyecto fue en equipo, donde se relizo una aplicacion movil
+                        para realizar reservas de hospedaje dentro del estado.
+                        Tecnologías utilizadas: Inteligencia Artificial, 
+                        flutterflow. 
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2 class="contact__title">Contacto</h2>
+            <section class="social-links">
+                <img src="assets/img/facebook.webp" alt="Facebook" class="social-links__icon" data-platform="facebook">
+                <img src="assets/img/instagram.webp" alt="Instagram" class="social-links__icon" data-platform="instagram">
+                <img src="assets/img/linkedin.webp" alt="LinkedIn" class="social-links__icon" data-platform="linkedin">
+                <img src="assets/img/github.webp" alt="GitHub" class="social-links__icon" data-platform="github">
+            </section>
+        </section>
+    </main>
     
     <footer class="footer">
-        <p>&copy; 2025 Belinda Salas - Todos los derechos reservados</p>
+        <p class="footer__text">&copy; 2025 Belinda Salas - Todos los derechos reservados</p>
     </footer>
     
     <script src="js/script.js"></script>
